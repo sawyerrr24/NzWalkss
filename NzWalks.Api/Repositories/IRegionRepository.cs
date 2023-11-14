@@ -1,4 +1,5 @@
 ﻿using NzWalks.Api.Models.Domain;
+using NzWalks.Api.Models.DTO;
 
 namespace NzWalks.Api.Repositories
 {
@@ -13,6 +14,6 @@ namespace NzWalks.Api.Repositories
         Task<Region?> UpdateAsync(Guid id,Region region);
 
         Task<Region?> DeleteAsync(Guid id);
-
+        
     }
 }
