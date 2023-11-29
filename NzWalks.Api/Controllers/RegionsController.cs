@@ -31,7 +31,7 @@ namespace NzWalks.Api.Controllers
  
 
         [HttpGet]
-        [Authorize(Roles ="Reader")]
+         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
 
@@ -178,37 +178,7 @@ namespace NzWalks.Api.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //or return deleted region back 
-            //map domain model to dto
-          /*  var regiondto = new Region
-            {
-           //  Id = regionDomainModel.Id,
-                Code = regionDomainModel.Code,
-                Name = regionDomainModel.Name,
-                RegionImageUrl = regionDomainModel.RegionImageUrl
-            };
-
-            return Ok(regiondto);
-          */
+       
         }
 
 
