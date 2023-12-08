@@ -31,7 +31,7 @@ namespace NzWalks.Api.Controllers
  
 
         [HttpGet]
-         [Authorize(Roles = "Reader")]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
 
@@ -63,7 +63,7 @@ namespace NzWalks.Api.Controllers
 
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
-            //var region = dbContext.Regions.Find(id);
+            
 
             //Get region domain model from db
 
@@ -147,9 +147,6 @@ namespace NzWalks.Api.Controllers
 
             
 
-       
-
-
 
         }
 
@@ -170,15 +167,11 @@ namespace NzWalks.Api.Controllers
             }
 
 
-         
-            
-
+        
             
             return Ok(mapper.Map<RegionDto>(regionDomainModel));
 
 
-
-       
         }
 
 
